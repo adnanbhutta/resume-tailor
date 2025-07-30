@@ -53,25 +53,25 @@ grand-project/
 ├── README.md    → This file
 
 ### 📥 Installation & Running Locally
-# 1. Clone the repo
+### 1. Clone the repo
 git clone https://github.com/adnanbhutta/resume-tailor.git
 
-# 2. Move into project
+### 2. Move into project
 cd resume-tailor/grand-project
 
-# 3. Install dependencies
+### 3. Install dependencies
 npm install
 
-# 4. Add environment variables
+### 4. Add environment variables
 touch .env.local
-## 🛠️ Example .env.local
+### 🛠️ Example .env.local
 SUPABASE_URL=your-supabase-url
 SUPABASE_KEY=your-anon-key
 MONGO_URI=your-mongodb-uri
-# 5. Run the app
+### 5. Run the app
 npm run dev
 Open http://localhost:3000 to view it in your browser.
-# 🔄 How It Works
+### 🔄 How It Works
 User logs in with email (magic link)
 
 User pastes their resume and a job description
@@ -81,7 +81,7 @@ App sends both to n8n → AI tailors the resume
 Response is displayed + saved to MongoDB
 
 User can view/download it from dashboard
-# 🧠 n8n AI Workflow (JSON file included)
+### 🧠 n8n AI Workflow (JSON file included)
 The n8n flow takes this structure:
 Prompt: "Tailor this resume to the following job post.
 
@@ -90,7 +90,7 @@ Resume:
 
 Job Description:
 {{ $json.jobDesc }}"
-# 💡 Future Improvements
+### 💡 Future Improvements
 PDF export of tailored resumes
 
 Autosave & draft mode
@@ -98,9 +98,9 @@ Autosave & draft mode
 Job title keyword suggestions
 
 Admin dashboard for analytics
-#🙌 Credits
+### 🙌 Credits
 Adnan Ali
 adnanbhutta51274@gmail.com
-# 📬 Contact
+### 📬 Contact
 Made with 💙 by Adnan Ali
 adnanbhutta51274@gmail.com
