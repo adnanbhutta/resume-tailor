@@ -1,0 +1,14 @@
+{
+  "nodes": [
+    {
+      "parameters": {
+        "model": "gpt-4",
+        "prompt": "Tailor this resume to the following job post.\n\nResume:\n{{ $json.resume }}\n\nJob Description:\n{{ $json.jobDesc }}"
+      },
+      "name": "Tailor Resume",
+      "type": "n8n-nodes-base.openai",
+      "typeVersion": 1,
+      "position": [400, 200]
+    }
+  ]
+}
